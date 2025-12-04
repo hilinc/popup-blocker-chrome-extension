@@ -45,10 +45,7 @@ A Chrome extension for blocking unnecessary content on web pages, with extensibl
 3. **Load Extension**
 
    - Click "Load unpacked" button
-   - Select this project directory:
-     ```
-     /Users/kk/me/chrome-extensions/puresurf-chrome-extension
-     ```
+   - Select this project directory (the folder containing `manifest.json`)
 
 4. **Confirm Installation**
    - Extension list should display "PureSurf"
