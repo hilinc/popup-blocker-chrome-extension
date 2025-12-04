@@ -12,7 +12,7 @@
     },
     "default_title": "PureSurf"
   },
-  "permissions": ["declarativeNetRequest", "tabs"],
+  "permissions": ["declarativeNetRequest"],
   "host_permissions": ["<all_urls>"],
   "declarative_net_request": {
     "rule_resources": [
