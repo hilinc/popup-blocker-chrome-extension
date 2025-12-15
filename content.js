@@ -9,7 +9,13 @@
         if (node.tagName === "SCRIPT") {
           const src = node.src || "";
           // Detect onetrust-consent-sdk.js
-          if (src.includes("onetrust-consent-sdk") || src.includes("cdn.cookielaw.org")) {
+          if (
+            src.includes("onetrust-consent-sdk") ||
+            src.includes("cdn.cookielaw.org") ||
+            src.includes("wcpstatic.microsoft.com") ||
+            src.includes("consent.cookiebot.com") ||
+            src.includes("consent.cookiefirst.com")
+          ) {
             console.log("[PureSurf] Blocked script:", src);
             node.remove();
           }
@@ -38,7 +44,16 @@
       // Guardian overlay
       'iframe[id^="sp_message_iframe"]',
       'iframe[src*="sourcepoint.theguardian.com"]',
-      '[id^="sp_message_container"]'
+      '[id^="sp_message_container"]',
+      // Microsoft Cookie Consent (MSCC) - VS Code Marketplace, Microsoft sites
+      "#wcpConsentBannerCtrl",
+      ".ms-wcpConsentBanner",
+      "[id*='wcpConsent']",
+      ".cc-banner",
+      "#cookie-banner",
+      "#consent-banner",
+      ".cookie-consent",
+      "[data-bi-id='cookie-banner']",
     ];
 
     selectors.forEach(selector => {

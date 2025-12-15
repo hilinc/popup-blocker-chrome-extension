@@ -78,6 +78,9 @@ Blocks script requests from the following domains:
 - `*onetrust-consent-sdk*`
 - `*cdn.cookielaw.org*`
 - `*optanon.blob.core.windows.net*`
+- `*wcpstatic.microsoft.com*` (Microsoft Cookie Consent)
+- `*consent.cookiebot.com*` (Cookiebot)
+- `*consent.cookiefirst.com*` (CookieFirst)
 
 Intercepts before script download for maximum efficiency.
 
@@ -101,6 +104,7 @@ Intercepts before script download for maximum efficiency.
 - https://www.bbc.com/ (BBC)
 - https://edition.cnn.com/ (CNN)
 - https://www.nytimes.com/ (The New York Times)
+- https://marketplace.visualstudio.com/ (VS Code Marketplace)
 
 ### Expected Results
 
