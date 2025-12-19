@@ -1,14 +1,14 @@
-# Privacy Policy for PopupsBlocker
+# Privacy Policy for Popup Blocker
 
 **Last Updated: November 27, 2025**
 
 ## Data Collection
 
-PopupsBlocker does not collect, store, or transmit any personal data or browsing information.
+Popup Blocker does not collect, store, or transmit any personal data or browsing information.
 
 ## What the Extension Does
 
-PopupsBlocker operates entirely locally on your device to:
+Popup Blocker operates entirely locally on your device to:
 
 - Block cookie consent banners
 - Remove privacy policy popups
@@ -27,7 +27,7 @@ These permissions are used solely to provide the core functionality of blocking 
 
 ## Third-Party Services
 
-PopupsBlocker does not use any third-party services, analytics, tracking tools, or external APIs.
+Popup Blocker does not use any third-party services, analytics, tracking tools, or external APIs.
 
 ## Data Storage
 

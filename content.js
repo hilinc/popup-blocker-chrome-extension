@@ -16,7 +16,7 @@
             src.includes("consent.cookiebot.com") ||
             src.includes("consent.cookiefirst.com")
           ) {
-            console.log("[PopupsBlocker] Blocked script:", src);
+            console.log("[Popup Blocker] Blocked script:", src);
             node.remove();
           }
         }
@@ -59,7 +59,7 @@
     selectors.forEach(selector => {
       const elements = document.querySelectorAll(selector);
       elements.forEach(el => {
-        console.log("[PopupsBlocker] Removed element:", selector);
+        console.log("[Popup Blocker] Removed element:", selector);
         el.remove();
       });
     });
@@ -90,12 +90,12 @@
     window.fetch = function (...args) {
       const url = args[0];
       if (typeof url === "string" && (url.includes("onetrust-consent-sdk") || url.includes("cdn.cookielaw.org"))) {
-        console.log("[PopupsBlocker] Blocked request:", url);
-        return Promise.reject(new Error("Blocked by PopupsBlocker"));
+        console.log("[Popup Blocker] Blocked request:", url);
+        return Promise.reject(new Error("Blocked by Popup Blocker"));
       }
       return originalFetch.apply(this, args);
     };
   }
 
-  console.log("[PopupsBlocker] Content script loaded");
+  console.log("[Popup Blocker] Content script loaded");
 })();
